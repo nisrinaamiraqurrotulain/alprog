@@ -1,0 +1,799 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background: #f4f6f8;
+}
+
+
+
+/* =====================================================
+   LANDING PAGE
+===================================================== */
+
+.landing-page {
+
+    position: relative;
+
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+    /* FOTO WADUK SERMO */
+
+    background-image: url("waduk-sermo.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+
+
+/* Lapisan hitam transparan */
+
+.landing-overlay {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.58),
+            rgba(0, 0, 0, 0.42)
+        );
+}
+
+
+
+/* Isi landing */
+
+.landing-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 90%;
+
+    max-width: 900px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+
+
+/* =====================================================
+   LOGO LANDING PAGE
+===================================================== */
+
+.logo-wrapper {
+
+    width: 155px;
+    height: 155px;
+
+    background: white;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+
+    margin-bottom: 20px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+
+.logo-kulon-progo {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    border-radius: 50%;
+}
+
+
+
+/* =====================================================
+   TEKS LANDING PAGE
+===================================================== */
+
+.welcome {
+
+    font-size: 15px;
+
+    letter-spacing: 4px;
+
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+
+.landing-content h1 {
+
+    font-size: 42px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+
+.landing-content h2 {
+
+    font-size: 28px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 18px;
+}
+
+
+.landing-description {
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    max-width: 650px;
+
+    margin-bottom: 30px;
+}
+
+
+
+/* =====================================================
+   TOMBOL LIHAT DATA
+===================================================== */
+
+.btn-masuk {
+
+    display: inline-block;
+
+    padding: 14px 35px;
+
+    background: #087f3b;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border-radius: 7px;
+
+    transition: 0.25s;
+}
+
+
+.btn-masuk:hover {
+
+    background: #075f2d;
+
+    transform: translateY(-2px);
+}
+
+
+
+/* =====================================================
+   KETERANGAN FOTO
+===================================================== */
+
+.photo-credit {
+
+    position: absolute;
+
+    z-index: 3;
+
+    right: 20px;
+
+    bottom: 15px;
+
+    font-size: 12px;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    padding: 7px 10px;
+
+    border-radius: 5px;
+}
+
+
+
+/* =====================================================
+   HALAMAN DATA
+===================================================== */
+
+.data-page {
+
+    min-height: 100vh;
+
+    background: #f4f6f8;
+}
+
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.header {
+
+    width: 100%;
+
+    min-height: 82px;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 10px 40px;
+
+    border-bottom: 3px solid #087f3b;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+.header-left {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.header-logo {
+
+    width: 58px;
+    height: 58px;
+
+    object-fit: contain;
+}
+
+
+.header h1 {
+
+    font-size: 19px;
+
+    color: #075f2d;
+}
+
+
+.header p {
+
+    font-size: 13px;
+
+    margin-top: 3px;
+
+    color: #666;
+}
+
+
+
+/* Tombol beranda */
+
+.home-button {
+
+    text-decoration: none;
+
+    background: #087f3b;
+
+    color: white;
+
+    padding: 10px 20px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+
+.home-button:hover {
+
+    background: #075f2d;
+}
+
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.main-container {
+
+    width: 92%;
+
+    max-width: 1250px;
+
+    margin: 35px auto;
+
+    display: flex;
+
+    gap: 30px;
+
+    align-items: flex-start;
+}
+
+
+
+/* =====================================================
+   SIDEBAR
+===================================================== */
+
+.sidebar {
+
+    width: 230px;
+
+    flex-shrink: 0;
+
+    background: white;
+
+    padding: 25px 20px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.sidebar h3 {
+
+    font-size: 16px;
+
+    color: #075f2d;
+
+    margin-bottom: 15px;
+}
+
+
+.sidebar > a {
+
+    display: block;
+
+    padding: 11px 12px;
+
+    margin-bottom: 7px;
+
+    text-decoration: none;
+
+    color: #333;
+
+    border-radius: 5px;
+}
+
+
+.sidebar > a:hover,
+.sidebar > a.active {
+
+    background: #087f3b;
+
+    color: white;
+}
+
+
+.sidebar-info {
+
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #ddd;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+.sidebar-info strong {
+
+    display: block;
+
+    color: #075f2d;
+
+    margin-top: 10px;
+}
+
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.content {
+
+    flex: 1;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.08);
+
+    text-align: center;
+}
+
+
+.content-title {
+
+    margin-bottom: 25px;
+}
+
+
+.small-title {
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    color: #087f3b;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+
+.content-title h2 {
+
+    font-size: 27px;
+
+    color: #222;
+
+    margin-bottom: 8px;
+}
+
+
+.content-title > p:last-child {
+
+    color: #666;
+
+    font-size: 14px;
+}
+
+
+
+/* =====================================================
+   TABEL
+===================================================== */
+
+.table-container {
+
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+
+table {
+
+    width: 100%;
+
+    min-width: 700px;
+
+    border-collapse: collapse;
+
+    margin: 0 auto;
+
+    font-size: 14px;
+}
+
+
+th,
+td {
+
+    border: 1px solid #d5dadd;
+
+    padding: 11px 10px;
+
+    text-align: center;
+}
+
+
+thead th {
+
+    background: #087f3b;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+
+thead tr:nth-child(2) th {
+
+    background: #0b9250;
+}
+
+
+tbody tr:nth-child(even) {
+
+    background: #f7f9f8;
+}
+
+
+tbody tr:hover {
+
+    background: #eaf5ee;
+}
+
+
+tbody td:nth-child(2) {
+
+    text-align: left;
+}
+
+
+
+/* Total */
+
+.total-row {
+
+    background: #dff1e5 !important;
+
+    font-weight: bold;
+
+    color: #075f2d;
+}
+
+
+
+/* =====================================================
+   KETERANGAN
+===================================================== */
+
+.keterangan {
+
+    margin-top: 25px;
+
+    text-align: left;
+
+    padding: 20px;
+
+    background: #f5faf7;
+
+    border-left: 5px solid #087f3b;
+
+    border-radius: 5px;
+}
+
+
+.keterangan h3 {
+
+    color: #075f2d;
+
+    margin-bottom: 10px;
+}
+
+
+.keterangan p {
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    color: #555;
+}
+
+
+
+/* =====================================================
+   TOMBOL KEMBALI
+===================================================== */
+
+.back-home {
+
+    display: inline-block;
+
+    margin-top: 25px;
+
+    color: #087f3b;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+.back-home:hover {
+
+    text-decoration: underline;
+}
+
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+
+    text-align: center;
+
+    padding: 25px 15px;
+
+    background: #075f2d;
+
+    color: white;
+
+    font-size: 13px;
+}
+
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 850px) {
+
+    .landing-content h1 {
+
+        font-size: 30px;
+    }
+
+
+    .landing-content h2 {
+
+        font-size: 21px;
+    }
+
+
+    .logo-wrapper {
+
+        width: 125px;
+        height: 125px;
+    }
+
+
+    .header {
+
+        padding: 10px 20px;
+    }
+
+
+    .header h1 {
+
+        font-size: 15px;
+    }
+
+
+    .header p {
+
+        font-size: 11px;
+    }
+
+
+    .main-container {
+
+        width: 94%;
+
+        flex-direction: column;
+    }
+
+
+    .sidebar {
+
+        width: 100%;
+    }
+
+
+    .content {
+
+        width: 100%;
+
+        padding: 20px 15px;
+    }
+
+
+    .content-title h2 {
+
+        font-size: 22px;
+    }
+
+
+    .home-button {
+
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .landing-content h1 {
+
+        font-size: 24px;
+    }
+
+
+    .landing-content h2 {
+
+        font-size: 17px;
+
+        letter-spacing: 1px;
+    }
+
+
+    .landing-description {
+
+        font-size: 14px;
+    }
+
+
+    .welcome {
+
+        font-size: 12px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .photo-credit {
+
+        font-size: 10px;
+
+        right: 10px;
+
+        bottom: 10px;
+    }
+
+}
